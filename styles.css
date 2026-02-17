@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: darkslategrey;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0;
+}
+
+.container-calculadora {
+  background-color: #353535;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px #464646;
+  max-width: 400px;
+}
+
+#visor {
+  width: 360px;
+  height: 100px;
+  font-family: "Roboto", sans-serif;
+  resize: none;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.div-visor {
+  margin-bottom: 15px;
+}
+
+.teclas-area {
+  border-top: 2px #222222 solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.botao {
+  width: 50px;
+  margin: 2px;
+  background-color: rgb(24, 97, 255);
+  color: white;
+  padding: 5px;
+  border: none;
+  box-shadow: 0px 2px 0px #222222;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+}
+
+.teclas-letra {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  flex-wrap: wrap;
+}
+
+.teclas-especiais {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.botao-especial {
+  background-color: darkgray;
+  color: black;
+}
+
+#botao-apagar {
+  background-color: red;
+}
+#botao-limpar {
+  background-color: orange;
+}
+#botao-igual {
+  background-color: rgb(0, 195, 255);
+  width: 77%;
+}
+#botao-verdade {
+  background-color: green;
+}
+#botao-falso {
+  background-color: red;
+}
+
+#resultado-tabela {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+#resultado-tabela h2, #resultado-tabela h3 {
+  color: white;
+  text-align: center;
+  margin: 10px 0;
+}
+
+#resultado-tabela table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 700px;
+}
+
+.creditos {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin-top: 30px;
+  padding: 15px;
+  font-size: 0.8rem;
+}
+
+.creditos h3 {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.creditos p {
+  margin: 3px 0;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 412px) {
+  .container-calculadora {
+    max-width: 347px;
+  }
+
+  #visor {
+    width: 307px;
+  }
+}
